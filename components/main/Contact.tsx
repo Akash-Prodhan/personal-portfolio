@@ -52,7 +52,7 @@ export function Contact() {
   return (
     <section id="contacts" className="w-full h-full max-sm:px-5 flex justify-center items-center">
       <div className="flex flex-col justify-center items-center h-full w-full">
-        <CardTitle className="mx-auto text-4xl py-12 pointer-events-none">Let's{" "}
+        <CardTitle className="mx-auto text-4xl py-12 pointer-events-none">Let&apos;s{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             Connect
           </span></CardTitle>

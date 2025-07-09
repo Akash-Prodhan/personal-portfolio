@@ -39,18 +39,23 @@ const Navbar = () => {
 
         <div className="hidden flex-row gap-5 sm:flex">
           {Socials.map((social) => (
-            <a href={social.href} target="_blank">
+            <a
+              key={social.name} // ✅ Move key here
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 className="cursor-pointer"
                 src={social.src}
                 alt={social.name}
-                key={social.name}
                 width={24}
                 height={24}
               />
             </a>
           ))}
         </div>
+
       </div>
     </header>
   );
