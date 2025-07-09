@@ -30,7 +30,7 @@ export default function RootLayout({
           <DockDemo />
         </div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-smhidden">
+          <div className="max-sm:hidden">
             <StarsCanvas />
           </div>
           <Navbar />
