@@ -11,9 +11,37 @@ import LenisProvider from "@/components/ui/lenisprovider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Akash Prodhan - Software Developer",
-  description: "This is my portfolio",
+  title: "Akash Prodhan - Frontend Developer",
+  description: "I'm Akash Prodhan, a passionate frontend web developer specializing in React, Next.js, and TypeScript.",
+  keywords: [
+    "Akash Prodhan",
+    "Frontend Developer",
+    "Web Developer",
+    "React Developer",
+    "Next.js Portfolio",
+    "Personal Website",
+  ],
+  authors: [{ name: "Akash Prodhan" }],
+  creator: "Akash Prodhan",
+  publisher: "Akash Prodhan",
+  robots: "index, follow",
+  openGraph: {
+    title: "Akash Prodhan - Frontend Developer",
+    description:
+      "This is my personal portfolio built with Next.js and TypeScript. Showcasing my projects and skills as a frontend web developer.",
+    url: "https://akashprodhan.fun",
+    siteName: "Akash Prodhan Portfolio",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akash Prodhan - Frontend Developer",
+    description:
+      "Portfolio website of Akash Prodhan, a frontend web developer skilled in React and Next.js.",
+  },
 };
+
 
 export default function RootLayout({
   children,
