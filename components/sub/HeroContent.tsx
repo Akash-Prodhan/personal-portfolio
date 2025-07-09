@@ -32,7 +32,7 @@ const HeroContent = () => {
           className="pointer-events-none flex flex-col gap-6 mt-6 text-[6vw] sm:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white min-w-fit max-w-[700px] w-auto h-auto"
         >
           <span className="min-w-fit">
-            Hi, I'm
+            Hi, I&apos;m
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
               Akash Prodhan
