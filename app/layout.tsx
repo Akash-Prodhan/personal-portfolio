@@ -12,7 +12,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Akash Prodhan - Frontend Developer",
-  description: "I'm Akash Prodhan, a passionate frontend web developer specializing in React, Next.js, and TypeScript.",
+  description:
+    "I'm Akash Prodhan, a passionate frontend web developer specializing in React, Next.js, and TypeScript.",
   keywords: [
     "Akash Prodhan",
     "Frontend Developer",
@@ -30,18 +31,26 @@ export const metadata: Metadata = {
     description:
       "This is my personal portfolio built with Next.js and TypeScript. Showcasing my projects and skills as a frontend web developer.",
     url: "https://akashprodhan.fun",
-    siteName: "Akash Prodhan Portfolio",
+    siteName: "Akash Prodhan",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Akash Prodhan Portfolio Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Akash Prodhan - Frontend Developer",
     description:
       "Portfolio website of Akash Prodhan, a frontend web developer skilled in React and Next.js.",
+    images: ["/og-image.png"],
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -50,6 +59,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ Favicon link added */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden relative`}
       >
@@ -69,5 +82,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
